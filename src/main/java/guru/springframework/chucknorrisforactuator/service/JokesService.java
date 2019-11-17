@@ -9,8 +9,8 @@ public class JokesService implements JokesInterface{
 
     private ChuckNorrisQuotes chuckNorrisQuotes;
 
-    public JokesService() {
-        this.chuckNorrisQuotes = new ChuckNorrisQuotes();
+    public JokesService(ChuckNorrisQuotes chuckNorrisQuotes) {
+        this.chuckNorrisQuotes = chuckNorrisQuotes;
     }
 
     public ChuckNorrisQuotes getChuckNorrisQuotes() {
